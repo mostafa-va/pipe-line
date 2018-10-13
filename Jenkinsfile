@@ -13,7 +13,7 @@ node ('slaves') {
        sh 'sudo service apache2 start'
        } 
        stage('test'){
-           sh  'x=$(curl http://52.14.70.177/index.html)'
+           sh  'x=$(curl http://18.224.74.90/index.html)'
            sh 'echo $x'
        }
         stage('production'){
