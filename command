@@ -7,12 +7,11 @@ node ('slaves') {
     stage('build')
     {
         
-       sh 'echo hellow>tuhin'
+       sh 'echo this is a practice test>tuhin'
        sh 'cat tuhin'
        } 
        stage('test'){
-           sh  'x=$(curl tuhin)'
-           sh 'echo $x'
+          
        }
         stage('production'){
         }
