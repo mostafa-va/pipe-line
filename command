@@ -11,7 +11,7 @@ node ('slaves') {
        sh 'cat tuhin'
        } 
        stage('test'){
-           sh  'x=$(curl http://18.224.74.90/tuhin)'
+           sh  'x=$(curl tuhin)'
            sh 'echo $x'
        }
         stage('production'){
