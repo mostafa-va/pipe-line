@@ -7,10 +7,11 @@ node ('slaves') {
     stage('build')
     {
         
-       sh 'touch writefile'
+       sh 'echo hellow>tuhin'
+       sh 'cat tuhin'
        } 
        stage('test'){
-           sh  'x=$(curl http://18.224.74.90/readfile)'
+           sh  'x=$(curl http://18.224.74.90/tuhin)'
            sh 'echo $x'
        }
         stage('production'){
